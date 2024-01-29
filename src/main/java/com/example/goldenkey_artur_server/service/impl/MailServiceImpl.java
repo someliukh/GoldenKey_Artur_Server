@@ -3,9 +3,11 @@ package com.example.goldenkey_artur_server.service.impl;
 import com.example.goldenkey_artur_server.constant.MailConstant;
 import com.example.goldenkey_artur_server.dto.MailDTO;
 import com.example.goldenkey_artur_server.service.MailService;
+import jakarta.mail.internet.MimeMessage;
 import lombok.AllArgsConstructor;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMailMessage;
 import org.springframework.stereotype.Service;
 
 @Service

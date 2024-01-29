@@ -13,6 +13,7 @@ public class MainController {
 
     private final MailService mailService;
 
+    @CrossOrigin(origins = "http://localhost:9000")
     @PostMapping("/send")
     public ResponseEntity<MailDTO> sendMessage(@RequestBody MailDTO mailDTO) {
         MailDTO mail = mailService.sendMessage(mailDTO);
