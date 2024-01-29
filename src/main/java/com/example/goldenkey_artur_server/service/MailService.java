@@ -4,6 +4,6 @@ import com.example.goldenkey_artur_server.dto.MailDTO;
 
 public interface MailService {
 
-    MailDTO sendMessage(String subject, String text);
+    MailDTO sendMessage(MailDTO mailDTO);
 
 }

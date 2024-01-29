@@ -15,7 +15,7 @@ public class MainController {
 
     @PostMapping("/send")
     public ResponseEntity<MailDTO> sendMessage(@RequestBody MailDTO mailDTO) {
-        MailDTO mail = mailService.sendMessage(mailDTO.getSubject(), mailDTO.getMessage());
+        MailDTO mail = mailService.sendMessage(mailDTO);
 
         return ResponseEntity.ok(mail);
     }
